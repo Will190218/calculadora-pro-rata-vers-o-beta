@@ -1,0 +1,73 @@
+/* Estilos para tornar o formulário responsivo */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 20px;
+}
+
+form {
+    max-width: 400px;
+    margin: 0 auto;
+}
+
+label {
+    display: block;
+    margin-bottom: 10px;
+}
+
+input[type="text"],
+input[type="email"] {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+button {
+    display: block;
+    width: 100%;
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+
+#button_remove {
+    background-color: #ffa500;
+}
+
+#mais_info {
+
+    max-width: 400px;
+    margin: 0 auto;
+    background-color: black;
+}
+
+#mais_info p {
+    color: #00FF00;
+    font-family: Consolas, monospace;
+}
+
+@font-face {
+    font-family: 'Consolas';
+    src: url('fonts/Consolas-Font/Consolas.ttf') format('truetype');
+}
+
+/* Estilos adicionais para tornar o formulário responsivo */
+@media screen and (max-width: 480px) {
+    form {
+        max-width: 100%;
+    }
+
+    input[type="text"],
+    input[type="email"] {
+        margin-bottom: 10px;
+    }
+}

@@ -1,0 +1,37 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+ 
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Calculadora de trancamento Bio Ritmo</title>
+  <link rel="stylesheet" type="text/css" href="style.css" />
+  </style>
+</head>
+<body>
+  <form action="/processar-formulario">
+    <label for="nome">Valor da mensalidade:</label>
+    <input type="text" id="valor_mensalidade" name="nome" required>
+    
+    <label for="email">Dias trancados:</label>
+    <input type="email" id="dias_trancados" name="email" required>
+    
+    <button id="button">Calcular</button>
+
+    <section>
+      <h3 style="text-align: center" id="valor_desconto"></h3>
+    </section>
+<br>
+    <button type="submit" style="visibility: hidden" id="button_remove">Informações mais detalhadas</button>
+
+     <section id="mais_info" style="visibility: hidden">
+      <p id="valor_diaria">Valor da diária:</p>
+      <p id="valor_mensalidade">Valor da mensalidade:</p>
+    </section> 
+  </form>
+ 
+  <script src="script.js"></script>
+  <!-- <script type="module" src="node_modules/spin.js/spin.js"></script> -->
+</body>
+</html>
